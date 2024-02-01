@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tips</title>
+</head>
+<body>
+    <div>
+        <h1> TIPS CALCULATOR</h1>
+        <input type="number" id="billtotal" placeholder="Total Bill">
+        <input type="range" id="tipinput" value="0" onchange="number()">
+        <span id="tipoutput">0%</span>
+        <button onclick="tasks()">CALCULATE</button>
+        <div id="resultsDiv">
+            <span>Tip Amount</span>
+            <input Type="number" id="tipamount" disabled>
+            <span>Total Bill with Tip</span>
+            <input type="number" id="totalbillwithtip" disabled>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
